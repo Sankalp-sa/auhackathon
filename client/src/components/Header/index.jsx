@@ -13,8 +13,8 @@ export default function Header({ ...props }) {
   const getBalance = (accountAddresss) => {
     window.ethereum.request({ method: 'eth_getBalance', params: [String(accountAddresss), "latest"] })
       .then(balance => {
-        console.log(ethers.utils.formatEther(balance));
-        setuserBalance(ethers.utils.formatEther(balance));
+        // console.log(ethers.formatEther(balance));
+        setuserBalance(ethers.formatEther(balance));
       })
   }
 

@@ -10,6 +10,7 @@
     "@testing-library/user-event": "^12.8.3",
     "dotenv": "^16.0.1",
     "ethers": "^6.11.1",
+    "ethers-utils": "^2.1.11",
     "hardhat": "^2.20.1",
     "prop-types": "^15.8.1",
     "react": "^18.2.0",
