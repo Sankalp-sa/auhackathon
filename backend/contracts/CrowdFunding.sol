@@ -49,6 +49,8 @@ contract CrowdFunding {
         campaign.donators.push(msg.sender);
         campaign.donations.push(amount);
 
+        // implement target reached or not
+
         (bool sent,) = payable(campaign.owner).call{value: amount}("");
 
         if(sent){
